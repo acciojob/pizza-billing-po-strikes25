@@ -6,7 +6,7 @@ public class DeluxePizza extends Pizza {
         // To call Pizza Class Constructor :
         super(isVeg);
         // your code goes here
-        addExtraCheese();
-        addExtraToppings();
+        super.addExtraCheese();
+        super.addExtraToppings();
     }
 }
