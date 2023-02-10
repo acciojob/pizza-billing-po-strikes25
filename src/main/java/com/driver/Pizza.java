@@ -7,7 +7,7 @@ public class Pizza {
     private String bill;
 
     private int toppings;
-    private int chees;
+    private int cheese;
     // To check if cheese already added :
     boolean isCheeseAdded;
     // To check if extra topping already added :
@@ -36,9 +36,9 @@ public class Pizza {
             this.isTakeAway = false;
          */
 
-        this.chees = 80;
+        this.cheese = 80;
         // Initializing the Bill :
-        this.bill = "Base Price of The Pizza: " + this.price + '\n';
+        this.bill = "Base Price of The Pizza: " + this.price + "\n";
     }
 
     public int getPrice(){
@@ -48,7 +48,7 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
         if(!isCheeseAdded) {
-            this.price += chees;
+            this.price += this.cheese;
             this.isCheeseAdded = true;
         }
     }
@@ -73,7 +73,7 @@ public class Pizza {
         // your code goes here
         if(!isBillCreated) {
             if(isCheeseAdded) {
-                this.bill += "Extra Cheese Added: 80" + "\n";
+                this.bill += "Extra Cheese Added: " + this.cheese + "\n";
             }
             if(isExtraToppingAdded) {
                 this.bill += "Extra Toppings Added: " + this.toppings + "\n";
