@@ -10,3 +10,4 @@ public class DeluxePizza extends Pizza {
         super.addExtraToppings();
     }
 }
+
